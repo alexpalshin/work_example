@@ -1,0 +1,153 @@
+/* My Account - Licenses */
+
+body.woocommerce-account .manage-licenses .product-title {
+	position: relative;
+}
+
+body.woocommerce-account .manage-licenses .product-thumbnail {
+	margin-right: 16px;
+}
+
+body.woocommerce-account .manage-licenses .product-title > div {
+	float: right;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Muli, sans-serif;
+	letter-spacing: normal;
+}
+
+body.woocommerce-account .manage-licenses .product-item ol {
+	counter-reset: my-counter;
+	list-style: none;
+	padding-left: 47px;
+	margin-bottom: 24px;
+}
+
+body.woocommerce-account .manage-licenses .product-item ol li {
+	counter-increment: my-counter;
+	position: relative;
+	margin-bottom: 8px;
+}
+
+body.woocommerce-account .manage-licenses .product-item ol li span {
+	display: inline-block;
+	height: 40px;
+	background-color: #eff5fd;
+	border-radius: 999px;
+	line-height: 40px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: calc(100% - 150px);
+	padding: 0 20px;
+}
+
+body.woocommerce-account .manage-licenses .product-item ol li span strong {
+	text-transform: capitalize;
+	color: #2B2E30;
+	font-weight: 800;
+}
+
+body.woocommerce-account .manage-licenses .product-item ol li:before {
+	content: counter(my-counter);
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: #eff5fd;
+	position: absolute;
+	top: 20px;
+	left: -28px;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	color: #2B2E30;
+}
+
+body.woocommerce-account .manage-licenses .product-item a.deactivate-sublicensee-button {
+	line-height: 40px;
+	height: 40px;
+	width: 140px;
+	display: inline-block;
+	padding: 0 20px;
+	vertical-align: top;
+	background-color: #eff5fd;
+	border-radius: 999px;
+	margin-left: 8px;
+	text-align: center;
+}
+
+body.woocommerce-account .manage-licenses .product-item a.deactivate-sublicensee-button.spinner:before {
+	animation: fa-spin 2s infinite linear;
+	display: inline-block;
+}
+
+body.woocommerce-account .manage-licenses .product-item a.deactivate-sublicensee-button.spinner:before {
+	content: "\f1ce";
+	font-family: FontAwesome;
+}
+
+body.woocommerce-account .manage-licenses .product-item a.deactivate-sublicensee-button:before {
+	content: attr(title);
+}
+
+body.woocommerce-account .manage-licenses .sublicensee-forms-wrapper {
+	border-top: 1px solid #ededed;
+	padding-top: 20px;
+}
+
+body.woocommerce-account .manage-licenses .add-sublicensee-user {
+	background-color: #f7fafe;
+	border-radius: 3px;
+	padding: 24px;
+	margin-top: 16px;
+}
+
+body.woocommerce-account .manage-licenses .add-sublicensee-user .bg-warning {
+	background-color: #e1bc29;
+	padding: 10px 12px;
+	font-weight: bold;
+	color: #ffffff;
+	margin-bottom: 20px;
+	max-width: 500px;
+}
+
+body.woocommerce-account .manage-licenses .add-sublicensee-user form {
+	max-width: 500px;
+}
+
+body.woocommerce-account .manage-licenses .add-sublicensee-user .add-user-button {
+	width: 140px;
+}
+
+body.woocommerce-account .manage-licenses .add-sublicensee-user a.add-user-cancel-button {
+	background: #eff5fd;
+	color: #2A5EA7 !important;
+}
+
+@media screen and (max-width: 991px) {
+
+	body.woocommerce-account .manage-licenses .product-title > div {
+		float: none;
+	}
+
+	body.woocommerce-account .manage-licenses .product-item ol li span {
+		width: calc(100% - 50px);
+	}
+
+	body.woocommerce-account .manage-licenses .product-item a.deactivate-sublicensee-button {
+		width: auto;
+		padding: 0 14px;
+	}
+
+	body.woocommerce-account .manage-licenses .product-item a.deactivate-sublicensee-button:before {
+		content: "\f057";
+		font-family: FontAwesome;
+	}
+
+	body.woocommerce-account .manage-licenses .sublicensee-email-username {
+		margin-bottom: 20px;
+	}
+
+}
